@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+header.hd{
+    height: 650px;
+    font-family: 'Mate SC',serif;  
+    font-weight: 100;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.8),rgba(4, 70, 70, 0.3)),url('./images/bgimg2.jpg');
+    background-size: cover; 
+    color:lavenderblush;
+}
+header.hd div.container{
+    text-align: center;
+    padding-top: 200px;
+    /* font-size: 40px; */
+}
+
+/* div.container{ */
+    /* margin-top: 150px; */
+header.hd div.container h1{
+    font-size:50px;
+    letter-spacing: 6px;
+}
+
+header.hd div.container p.info{
+    font-size: 25px;
+    /* margin-top: 260px; */
+
+}
+header.hd div.container a.button{
+    /* display: inline-block; */
+    border-radius: 40px;
+    color:lightseagreen;
+    text-decoration: none;
+    padding: 10px;
+    margin:20px;
+    font-size: 23px;
+
+}
+header.hd div.container a.button:hover{
+    background-color: rgb(59, 145, 142);
+          color: lavenderblush;
+}
+header.hd nav ul li{
+      float:left;
+      list-style: none;
+      margin-top: 240px;
+}
+header.hd nav ul li.right{float: right;}
+
+header.hd nav ul::after{display: block;
+                            clear: both;
+                            content: "";}
+
+header.hd nav ul.topnav li{
+    display: none;
+}
+
+header.hd nav ul li a{
+    text-decoration: none;
+    color:lavenderblush;
+    padding: 10px;
+    margin:20px;
+    font-size: 25px;
+}
+header.hd nav ul li a.button{
+    border-radius: 40px;
+    color: lightseagreen;
+}
+header.hd nav ul li a.button:hover{
+          background-color: rgb(59, 145, 142);
+          color: lavenderblush;
+}
+
+header.hd nav ul li a:hover{
+    color:lightseagreen;
+}
+
+header.hd nav ul.topnav li.dropdownicon{
+    display: none;
+}
+section.aboutme h1{
+    text-align:center;
+    font-size: 25px;
+    padding: 15px;
+}
+
+section.aboutme div.content{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    
+
+}
+section.aboutme div.content, section.aboutme div.aboutimg{
+    width:50%;
+    float:left;
+    /* height:300px; */
+    margin-top: 15px;
+}
+
+section.aboutme div.aboutimg{
+    padding-left:150px;
+}
+
+section.aboutme a.button{
+    display: inline-block;
+    border-radius: 40px;
+    background-color:black;
+    color:lavenderblush;
+    text-decoration: none;
+    padding: 15px;
+    margin:10px;
+    font-size: 20px;
+}
+
+section.aboutme a.button:hover{
+    background-color:rgb(4, 187, 178);
+    color:black;
+}
+
+section.aboutme{
+    /* background-color:rgb(225, 242, 245); */
+}
+
+
+section.aboutme::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+section.another div.ac,section.another div.ce,section.another div.pr{
+    width:33%;
+    float:left;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+section.another::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+section.another div.ac p,section.another div.ce p,section.another div.pr p{
+    font-weight: 50%;
+}
+section.another div.ac a,section.another div.ce a,section.another div.pr a{
+    display: inline-block;
+    text-decoration: none;
+     color: gray;
+     padding: 10px;
+}
+
+section.another div.ce a{
+    padding-top: 30px;
+}
+section.another div a:hover{
+    color:lightseagreen;
+    text-decoration: underline;
+}
+section.whyme div.whyimg, section.whyme div.whycon{
+    float: left;
+}
+section.whyme h1{
+    text-align: center;
+    margin:10px;
+    font-size: 25px;
+}
+section.whyme div.whyimg{
+    padding-left: 150px;
+    width:40%;
+    margin-top: 15px;
+    
+}
+section.whyme div.whycon{
+    text-align: center;
+    font-size: 25px;
+    line-height: 110%;
+    padding:30px;
+    width: 60%;
+    margin-top:50px;
+}
+
+section.whyme a.button{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+    background-color: black;
+    color:lavenderblush;
+    padding: 10px;
+    margin:10px;
+
+}
+section.whyme a.button:hover{
+    background-color: rgb(201, 164, 245);
+    color:black;
+}
+section.whyme::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+footer.contact{
+    background: linear-gradient(to top,black,rgb(91, 165, 170));
+    /* height:300px; */
+    margin-top: 50px;
+    
+    /* font-family: 'mate sc',serif; */
+}
+footer.contact h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+}
+
+footer.contact div.cinfo ul li{
+    font-size: 25px;
+    text-align: left;
+    padding: 15px;
+    color: lavenderblush;
+    list-style:none;
+}
+footer.contact div.cinfo, footer.contact div.contimg{
+    float: left;
+    width: 50%;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+footer.contact::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+footer.contact div.contimg{
+    padding-left: 400px;
+}
+footer.contact div.contimg img{
+    /* background: linear-gradient(black,green); */
+    opacity: 20px;
+    border-radius: 10px;
+}
+footer.contact div.cinfo{
+    padding-left: 55px;
+}
+
+/* MEDIA QUERRIES*/
+ @media(max-width:700px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    header.hd{
+         width:100vw; 
+        background-size:cover;
+        height:75vh;
+        background-position-x: center;
+    }
+    header.hd div.container{
+        padding-top: 32vh;
+        /* float: left; */
+        width:100vw;
+        text-align: center;
+    }
+
+   header.hd div.container h1.fir{
+         font-size: 40px;
+   }
+   header.hd div.container p.info{
+       font-size: 20px;
+   }
+   header.hd div.container a.button{
+       font-size: 20px;
+   }
+   /* header.hd nav ul{
+       width:100vw;
+   } */
+   header.hd nav ul li{
+       display: none;
+       /* display:block;
+       position:relative;
+       margin:10px;
+       margin-left:2vw; 
+       padding:0; */
+   }
+   /* header.hd nav ul li a{
+       font-size:12px; */
+   header.hd nav ul.topnav li.dropdownicon{
+       display: block;
+       position: absolute;
+       margin:5px;
+       /* margin-left:2vw; */
+       margin-top: 2vh;
+       padding:5px;
+   }
+   header.hd nav ul.topnav li.dropdownicon a{
+       font-size: 37px;
+       margin:0;
+       padding: 0;
+   }
+
+   header.hd nav ul.topnav.responsive{
+       position:absolute;
+       background-color:rgba(0,0,0,1);
+       width:100vw;
+       height:75vh;
+       padding:10px;
+   }
+   header.hd nav ul.topnav.responsive li.dropdownicon{
+       float: left;
+       margin:5px;
+       margin-top: 2vh;
+       padding:5px;
+
+   }
+   header.hd nav ul.topnav.responsive li{
+       margin: 5px;
+       margin-left:30px;
+       padding:20px;
+       display: block;
+       float: none;
+   }
+   header.hd nav ul.topnav.responsive li.ff{
+       margin-top: 6vh;
+   }
+
+
+   header.hd nav ul li a.button:hover{
+    background-color: rgb(59, 145, 142);
+    color: lavenderblush;
+}
+section.aboutme h1{
+    font-size: 22px;
+    padding:0px;
+    padding-top: 13px;
+}
+section.aboutme div.content{
+    font-size: 18px;
+    width: 100vw;
+    float: none;
+    padding:15px;
+    margin:0;
+    text-align: center;
+}
+section.aboutme div.content a.button{
+    float:none;
+    font-size: 16px;
+    padding: 8px;
+    /* margin-left: 0px; */
+    margin:8px;
+    display:inline-block;
+}
+section.aboutme div.aboutimg{
+    float: none;
+    width: 100vw;
+    /* padding: 10px; */
+    /* margin-top: 20px; */
+    padding:2vw;
+    padding-left: 2.5vw;
+    margin:0;
+}
+section.aboutme div.aboutimg img{
+    height:280px;
+    width: 95vw;
+}
+section.another div.ac{
+    font-size: 16px;
+    width: 100vw;
+    float: none;
+    padding:10px;
+    margin:0;
+}
+section.another div.ce{
+    font-size: 16px;
+    width: 100vw;
+    float: none;
+    padding:10px;
+    margin:0;
+}
+section.another div.ce a{
+    padding-top: 10px;
+}
+
+section.another div.pr{
+    font-size: 16px;
+    width: 100vw;
+    float: none;
+    padding: 10px;
+    margin:0;
+}
+section.whyme h1{
+    font-size: 22px;
+    padding:0px;
+    padding-top: 13px;
+    margin:0;
+}
+section.whyme div.whyimg{
+    width:100vw;
+    float:none;
+    padding:2vw;
+    padding-left: 2.5vw;
+}
+section.whyme div.whyimg img{
+    height:320px;
+    width: 95vw;
+}
+section.whyme div.whycon{
+    float: none;
+    width:100vw;
+    font-size: 18px;
+    margin:0;
+    padding:12px;
+}
+section.whyme div.whycon a{
+    font-size: 16px;
+    padding: 8px;
+}
+footer.contact{
+    margin:0;
+    height:380px;
+}
+footer.contact h1{
+    font-size: 22px;
+}
+footer.contact div.contimg{
+    float: none;
+    width:100vw;
+    padding:10px;
+    margin:0;
+    padding-left:110px;
+    padding-bottom: 0;
+}
+footer.contact div.contimg img{
+    height:130px;
+    width:150px;
+}
+footer.contact div.cinfo{
+    width:100vw;
+    margin:0;
+    padding:0;
+}
+footer.contact div.cinfo ul li{
+    text-align: left;
+    font-size: 18px;
+    padding:2.2vw;
+    padding-left:10vw;
+}
+
+}
+
+
+

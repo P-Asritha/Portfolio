@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleport.css">
+    <title>Asritha</title>
+</head>
+<body>
+    <header class="hd">
+        <nav>
+            <ul class="topnav" id="dropdownclick">
+                <li class="dropdownicon"><a href="javascript:void(0)" onclick="dropdown()">&#9776</a></li>
+                <li class="ff"><a href="./projects.html">Projects</a></li>
+                <li><a href="https://github.com/P-Asritha">Git-hub</a></li>
+                <li><a href="./Asritha_Resume.pdf" target="_blank">Resume</a></li>
+                <li class="right"><a class="button" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="fir">Asritha</h1><br>
+            <p class="info">Front-End Web Developer | Computer Science Engineer</p><br>
+            <a class="button" href="./portorg.html">Portfolio</a>
+        </div>
+            <nav>
+                <ul>
+                    <!-- <li class="dropdownicon"><a href="javascript:void(0)" onclick="dropdown()">&#9776</a></li> -->
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="https://github.com/P-Asritha" target="_blank">Git-Hub</a></li>
+                    <li><a href="./Asritha_Resume.pdf" target="_blank">Resume</a></li>
+                    <li class="right"><a class="button" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section>
+    <section class="aboutme">
+        <h1>ABOUT ME</h1>
+        <div class="content">
+        <p>I, being an optimistic and enthusiastic person have always found happiness in doing my work.<br>
+        I have always been eager to explore new things<br>
+         and always believed that -“Live as if you were to die tomorrow. Learn as if you were to live forever.” 
+        As a budding Computer Science Engineer I thrive to learn various languages and implement them in solving real-time problems.  </p>
+        <a class="button" href="./portorg.html">Portfolio</a>
+    </div>
+        <div class="aboutimg">
+        <img src="./images/about1.png" width="500px" height="300px" alt="qualities">
+        </div>
+    </section>
+    <section class="another">
+        <div class="ac">
+            <img src="./images/acad.png" alt="Academics icon" width="100px" height="100px">
+            <h2>Academics</h2>
+            <p>I have completed my academics from prestiged instituitions and has always been a merit student.<br>
+                Check this out to know more about my Academic Achievements.</p>
+            <a href="./academics.html">See More</a>
+        </div>
+        <div class="ce">
+            <img src="./images/cert2.jpg" alt="Certificates icon" width="100px" height="100px">
+            <h2>Certificates</h2>
+            <p>Check this out to know about my technical skills,<br>
+                 that I have aquired by learning various courses in various platforms such as Coursera, Shape AI.</p>
+            <a href="./certificates.html">See More</a>
+        </div>
+        <div class="pr">
+            <img src="./images/proj2.png" alt="Projects icon" width="100px" height="100px">
+            <h2>Projects</h2>
+            <p>As a Front-End developer, I have done a couple of projects.<br>
+                Also being a Computer Science Engineer, I have got projects in Python and Machine Learning.</p>
+            <a href="./projects.html">See More</a>
+        </div>
+    </section>
+    </section>
+    <hr>
+    <section class="whyme">
+        <h1>WHY ME??</h1>
+        <div class="whyimg">
+            <img src="./images/whyme.jpg" alt="employee" height="400px" width="400px">
+        </div>
+        <div class="whycon">
+            <p> I personally believe that, There is always something more to do for being perfect.<br>
+                Even though I am a fresher, I can assure that i will work with my utmost potential to obtain that perfection and
+                towards the growth and welfare of your company. <br>
+            I have also aquired communication and people skills and leadership qualities through the course of my education.
+            Me being an encouraging person, have always believed in team work.<br>
+            To know more about my qualifications, do check out my Resume. 
+                  </p>
+            <a class="button" href="" >Resume</a>
+        </div>
+    </section>
+    <footer class="contact" id="contact">
+    <!-- <div class="cinfo"> -->
+     <h1>Contact Me</h1>
+     <div class="contimg">
+         <img src="./images/contact4.png" alt="contact icons" height="180px" width="200px">
+     </div>
+     <div class="cinfo">
+     <ul>
+         <li>Email-Id  :  pallapotuasritha@gmail.com</li>
+         <li>Phone No  :  +91 9121997555</li>
+         <li>Git-hub   :  P-Asritha</li>
+     </ul>
+     </div>
+    </footer>
+
+<script>
+    function dropdown(){
+        var x=document.getElementById("dropdownclick");
+        if(x.className==="topnav")
+        {
+            x.className+=" responsive";
+            console.log("Navbar is open");
+        }
+        else{
+            x.className="topnav";
+            console.log("Navbar is closed");
+        }
+    }
+</script>
+</body>
+</html>

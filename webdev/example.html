@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding:0;
+        margin:0;
+        box-sizing: border-box;}
+         /* .nav ul li{
+             list-style: none;
+         }
+         .fir{
+             color:blue;
+             display:inline;
+             border: grey solid 2px;
+             width:40%;
+
+         }
+         .sec{
+             border: black solid 2px;
+             color:green;
+             display:inline;
+
+         } */
+         .para1{ border:5px solid green;
+                 padding: 0;
+                }
+         .A,.B,.C,.D{width:25%;
+                      float:left;}
+         .A{background-color: pink;}
+         .B{background-color: lightblue;}
+         .C{background-color: lightyellow;}
+         .D{background-color: mediumpurple;}
+
+         .para1::after{content: "";
+                       display: block;
+                        clear: both;
+         }
+         .E{background-color: mediumpurple;}
+         .para2{border: 5px solid black;}
+        
+         li.dropdown ul.dropdowncontent li{
+             display:none;
+         }
+         li.dropdown ul.dropdowncontent.responsive li{
+             display: block;
+             position:absolute;
+             height:30px;
+         }
+    </style>
+</head>
+<body>
+    <header class="nav">
+    <ul>
+        <li><a href="www.google.com">Home</a></li>
+        <li><a href="www.gmail.com">About</a></li>
+        <li><a href="www.facebook.com">Contact</a></li>
+        
+    </ul>
+    </header>
+    <p class="fir">my name is asha. Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Quam illo et officiis unde at commodi inventore, 
+        laboriosam quidem eos odit?</p>
+    <p class="sec">my name is aarthi</p><br><br>
+    <div class="para1">
+        <p class="A">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur quia ullam perferendis, temporibus rerum, veniam error soluta possimus provident exercitationem iste quisquam fugit iusto eaque? Aspernatur placeat obcaecati dicta. Illum tenetur numquam reprehenderit quia ea, 
+            nam possimus reiciendis non, amet ipsam laborum nobis beatae fuga magnam quos minus ex.</p>
+         <p class="B">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur quia ullam perferendis, temporibus rerum, veniam error soluta possimus provident exercitationem iste quisquam fugit iusto eaque? Aspernatur placeat obcaecati dicta. Illum tenetur numquam reprehenderit quia ea, 
+            nam possimus reiciendis non, amet ipsam laborum nobis beatae fuga magnam quos minus ex.</p>
+   
+        <p class="C">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur quia ullam perferendis, temporibus rerum, veniam error soluta possimus provident exercitationem iste quisquam fugit iusto eaque? Aspernatur placeat obcaecati dicta. Illum tenetur numquam reprehenderit quia ea, 
+            nam possimus reiciendis non, amet ipsam laborum nobis beatae fuga magnam quos minus ex.</p>
+
+        <p class="D">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur quia ullam perferendis, temporibus rerum, veniam error soluta possimus provident exercitationem iste quisquam fugit iusto eaque? Aspernatur placeat obcaecati dicta. Illum tenetur numquam reprehenderit quia ea, 
+            nam possimus reiciendis non, amet ipsam laborum nobis beatae fuga magnam quos minus ex.</p>
+    </div><br><br>
+        <!-- <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur quia ullam perferendis, temporibus rerum, veniam error soluta possimus provident exercitationem iste quisquam fugit iusto eaque? Aspernatur placeat obcaecati dicta. Illum tenetur numquam reprehenderit quia ea, 
+            nam possimus reiciendis non, amet ipsam laborum nobis beatae fuga magnam quos minus ex.</p> -->
+    <div class="para2">
+        <p class="E">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur quia ullam perferendis, temporibus rerum, veniam error soluta possimus provident exercitationem iste quisquam fugit iusto eaque? Aspernatur placeat obcaecati dicta. Illum tenetur numquam reprehenderit quia ea, 
+                    nam possimus reiciendis non, amet ipsam laborum nobis beatae fuga magnam quos minus ex.</p></div>
+  
+                    <nav>
+                        <ul>
+                            <!-- <li class="dropdownicon"><a href="javascript:void(0)" onclick="dropdown()">&#9776</a></li> -->
+                            <li><a href="./projects.html">Projects</a></li>
+                            <li class="dropdown" id="dp">
+                                <ul class="dropdowncontent">
+                                    <li><a href="">Git-Hub</a></li>
+                                    <li><a href="">LinkedIn</a></li>
+                                </ul>Profile</li>
+                            <li><a href="">Resume</a></li>
+                            <li class="right"><a class="button" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+<script>
+    function dpc(){
+    var x=document.getElementById("dp");
+    if(x.className==="dropdown"){
+        x.className+=" responsive";
+        console.log("li open");
+    }
+    else{
+        x.className="dropdown";
+        console.log("li close");
+    }
+</script>
+
+
+</body>
+</html>

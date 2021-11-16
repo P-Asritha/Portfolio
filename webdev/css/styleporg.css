@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 236, 236);
+}
+
+section.header{
+    background-image: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url('../images/2portbg2.jpg');
+    background-size:cover;
+    height:600px;
+    font-family: 'mate sc',serif;
+
+}
+section.header div.container{
+    text-align: center;
+    padding-top:260px;
+    /* font-weight: 20px; */
+    color:rgb(224, 208, 213);
+}
+section.header div.container h1{
+    font-size: 55px;
+}
+section.header div.container p{
+    font-size: 25px;
+}
+section.header div.home{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    color: rgb(224, 208, 213);
+    padding-top: 180px;
+    padding-right: 15px;
+}
+
+section.header div.home a{
+    text-decoration: none;
+    font-size: 22px;
+    color:cadetblue;
+    border-radius: 40px;
+    padding:10px;
+}
+section.header div.home a:hover{
+    color:rgb(224, 208, 213);
+    background-color: darkcyan;
+}
+
+section.wrapper{
+    margin:12px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+section.wrapper div.part{
+    border:solid black 3px;
+    /* height:400px; */
+    padding:15px;
+    margin:25px;
+    margin-left: 85px;
+    width:370px;
+
+}
+section.wrapper div.part div.cdesc{
+    font-size: 20px;
+    text-align: center;
+}
+section.wrapper div.part div.cimg{
+    padding:30px;
+    padding-top:8px;
+    padding-bottom: 8px;
+
+}
+section.wrapper div.part div.cdesc h1{
+    padding-bottom:10px;
+}
+
+/*MEDIA QUERRIES*/
+
+@media(max-width:700px){
+    
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    section.header{
+        background-size: cover;
+        background-position-x:center;
+        width:100vw;
+        margin:0;
+        height: 70vh;
+    }
+    section.header div.container{
+        padding-top: 33vh;
+    }
+    section.header div.container h1{
+        font-size: 30px;
+    }
+    section.header div.container p{
+        font-size: 20px;
+    }
+    section.header div.home{
+        font-size: 18px;
+        padding-top:26vh;
+    }
+    section.header div.home a{
+        padding:8px;
+        font-size: 19px;
+    }
+    section.wrapper{
+        margin:0;
+        padding:0;
+        width:100vw;
+    }
+    section.wrapper div.part{
+        margin:0;
+        margin-top:8vh;
+        padding:0;
+        width:100vw;
+        border:none;
+    }
+    section.wrapper div.part div.cimg{
+        padding:0;
+        padding-left: 5vw;
+
+    }
+    section.wrapper div.part div.cimg img{
+        width:90vw;
+        height:35vh;
+        
+    }
+    section.wrapper div.part div.cdesc{
+        width:100vw;
+        font-size: 18px;
+        padding:1.5vh;
+    }
+    section.wrapper div.part div.cdesc h1{
+        font-size: 20px;
+    }
+
+}

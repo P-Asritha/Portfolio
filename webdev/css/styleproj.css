@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(204, 197, 197);
+}
+
+section.header{
+    /* background: linear-gradient(to bottom right,rgb(0, 0, 0),grey) ; */
+    /* background-image:url('../images/projbg2.jpg'); */
+    /* background-size: cover; */
+    background-color: black;
+    height: 320px;
+    text-align: center;
+    color: lavenderblush;
+    margin-top: 30px;
+}
+
+section.header div.img,section.header div.cont{
+    float: left;
+    width: 50%;
+    
+}
+section.header{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+section.header div.cont{
+    font-size: 50px;
+    margin-top: 150px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section.header div.home{
+    text-align: right;
+    color: lavenderblush;
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 270px;
+}
+
+section.header div.home a{
+    display: inline-block;
+    border-radius: 40px;
+    text-decoration: none;
+    color: cadetblue;
+    padding: 8px;
+}
+
+section.header div.home a:hover{
+    background-color: cadetblue;
+    color: black;
+
+}
+
+section.project{
+    margin-top: 40px;
+    width: 60%;
+    margin-left:300px;
+    margin-right: 300px;
+}
+
+section.project div.pimg, section.project div.pdesc{
+    float: left;
+}
+
+section.project::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+section.project div.pimg{
+    width: 30%;
+    height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section.project div.pdesc{
+    width: 70%;
+    font-size: 20px;
+    text-align: left;
+    height: 250px;
+    line-height: 110%;
+    padding: 18px;
+    padding-top:20px;
+}
+
+section.project div.pdesc p.desc{
+    font-size: 20px;
+}
+section.project div.pdesc p.plink{
+    padding:20px;
+}
+section.project div.pdesc p.plink a{
+    text-decoration: none;
+    /* color:rgb(9, 143, 153); */
+    color: rgb(131, 50, 113);
+    border-radius: 30px;
+    padding:5px;
+}
+
+section.project div.pdesc p.plink a:hover{
+    color:lavenderblush;
+    background-color: black;
+}
+
+@media(max-width:700px)
+{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  
+    section.header{
+        height:60vh;
+        width:100vw;
+        margin:0;
+        background-size: cover;
+    }
+    section.header div.cont h1{
+        font-size: 40px;
+        /* padding-top: 2vw; */
+        text-align: center;
+        margin:0;
+        float: none;
+    }
+    section.header div.cont{
+        margin:0;
+        text-align: center;
+        width: 100vw;
+    }
+    section.header div.home{
+        padding:0;
+        margin-top:14vh;
+        font-size: 18px;
+    }
+    section.header div.home a{
+        font-size: 19px;
+    }
+    section.header div.img{
+        width:100vw;
+        float: none;
+    }
+    section.header div.img img{
+        padding-top: 12vw;
+        width:80vw;
+        height:40vh;
+    }
+    section.project{
+        margin:0;
+        width:100vw;
+    }
+    section.project div.pimg{
+        width:100vw;
+        height:30vh;
+        float: none;
+        margin:0;
+        padding:0;
+        /* margin-top: 3vh; */
+    }
+    section.project div.pimg img{
+        width:97vw;
+        height:30vh;
+        padding:2vw;
+        padding-left: 5vw;
+
+    }
+
+    section.project div.pdesc{
+        float: none;
+        width:100vw;
+        padding-top:10px;
+    }
+    section.project div.pdesc h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    section.project div.pdesc p.desc{
+        font-size: 18px;
+        text-align: center;
+    }
+    section.project div.pdesc p.plink{
+        font-size:18px;
+        text-align: center;
+        padding:10px;
+    }
+    section.project div.pdesc p.plink a{
+        font-size: 19px;
+    }
+}
